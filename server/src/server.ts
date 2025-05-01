@@ -1,6 +1,13 @@
 import express from 'express';
 import path from 'path';
 import dotenv from 'dotenv';
+
+// 👇👇👇 ADD THIS for ES module __dirname workaround 👇👇👇
+import { fileURLToPath } from 'url';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+// 👆👆👆 END workaround 👆👆👆
+
 // Import the ApolloServer class
 import { ApolloServer } from '@apollo/server';
 import { expressMiddleware } from '@apollo/server/express4';
