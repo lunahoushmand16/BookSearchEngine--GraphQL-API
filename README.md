@@ -1,8 +1,8 @@
-# Social-Network-Api
+# BookSearchEngine – GraphQL API with Apollo Server
 
 ## Description
 
-This Google Books API search engine built with a RESTful API, The app was built using the MERN stack, with a React front end, MongoDB database, and Node.js/Express.js server and API. It's set up to allow users to SignUp/Login and save book searches to the backend and also Delete the Book doent need anymore. 
+This is a full-stack MERN application that allows users to search for books using the Google Books API, sign up or log in, and save/delete books from their personal list. The RESTful API has been fully refactored to use GraphQL with Apollo Server, providing efficient and flexible data queries and mutations.
 
 ## Table of Contents
 
@@ -19,11 +19,11 @@ This Google Books API search engine built with a RESTful API, The app was built 
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/lunahoushmand16/BookSearchEngine---RESTful-API.git
+   git clone https://github.com/lunahoushmand16/BookSearchEngine--GraphQL-API
    ```
 2. Navigate to the project folder:
    ```sh
-   cd BookSearchEngine---RESTful-API 
+   cd BookSearchEngine--GraphQL-API 
    ```
 3. Install dependencies:
     ```sh
@@ -47,9 +47,13 @@ This Google Books API search engine built with a RESTful API, The app was built 
 
 - Open your browser and navigate to: http://localhost:3000
 
-- Sign up for a new account, or log in if you already have one.
+- Use the Search for Books feature to query book data via the Google Books API
 
-- Search for books, save favorites, and delete saved books anytime.
+- Log in or create an account to save favorite books to your profile
+
+- Access your saved books from the “Saved Books” page
+
+- All user actions are managed via GraphQL queries and mutations
 
 ### Screenshots:
 
@@ -60,7 +64,9 @@ This Google Books API search engine built with a RESTful API, The app was built 
 ## Credits
 
 - Created by **[Luna Houshmans](https://github.com/lunahoushmand16)**
-- Built with: 
+- Technologies used: 
+  - **[Apollo Server](https://www.apollo.io/)**
+  - **[GraphQL](https://graphql.org/)**
   - **[Express.js](https://expressjs.com/)**
   - **[TypeScript](https://www.typescriptlang.org/)**
   - **[Mongoose](https://mongoosejs.com/)**
@@ -74,27 +80,25 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 ## Badges
 
-![GitHub repo size](https://img.shields.io/github/repo-size/lunahoushmand16/BookSearchEngine---RESTful-API)
-![GitHub contributors](https://img.shields.io/github/contributors/lunahoushmand16/BookSearchEngine---RESTful-API)
-![GitHub stars](https://img.shields.io/github/stars/lunahoushmand16/BookSearchEngine---RESTful-API?style=social)
+![GitHub repo size](https://img.shields.io/github/repo-size/lunahoushmand16/BookSearchEngine--GraphQL-API)
+![GitHub contributors](https://img.shields.io/github/contributors/lunahoushmand16/BookSearchEngine--GraphQL-API)
+![GitHub stars](https://img.shields.io/github/stars/lunahoushmand16/BookSearchEngine--GraphQL-API?style=social)
 
 ## Features
 
-- Full RESTful API for book searching
+- Fully refactored MERN stack with GraphQL API
 
-- Authentication with secure JWTs
+- User authentication with JWT
 
-- Create users with unique username and email
+- Google Books API search
 
-- Search for your favorite books using Google Books API
+- Book saving and deletion per user profile
 
-- Save and remove books from your profile
+- Apollo Client integration on frontend
 
-- Schema validation and clean error handling
+- GraphQL queries & mutations for all core actions
 
-- Modular TypeScript backend structure
-
-- Timestamped saved data (createdAt)
+- Type-safe backend with modular structure
 
 ## How to Contribute
 
