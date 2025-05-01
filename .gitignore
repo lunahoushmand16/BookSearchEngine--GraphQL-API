@@ -24,4 +24,7 @@ dist-ssr
 *.sw?
 
 #ignore env file 
+# .gitignore
+node_modules/
+dist/
 .env
